@@ -1,5 +1,14 @@
-# Vue 3 + Vite
+載下專案後：
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Step1 => 
+npm i
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+Step2 =>
+npm run dev
+
+Step3
+！注意
+src/views/MonthlyRevenue/index.vue的第102行
+port號改成對應後端的port號，否則無資料。
+
+
