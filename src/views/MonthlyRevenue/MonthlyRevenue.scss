@@ -1,0 +1,131 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 6px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+// 偶數行換色 
+tbody tr:nth-child(even) {
+    background-color: #f6efe5;
+}
+
+// 表頭換色
+thead th {
+    background-color: #B7A79F;
+}
+
+// 出表日期 
+th:nth-child(1) {
+    width: 80px;
+}
+
+// 資料年月 
+th:nth-child(2) {
+    width: 80px;
+}
+
+// 公司代號 
+th:nth-child(3) {
+    width: 70px;
+}
+
+// 公司名稱 
+th:nth-child(4) {
+    width: 150px;
+}
+
+// 產業別 
+th:nth-child(5) {
+    width: 150px;
+}
+
+// 營收 
+th:nth-child(6),
+th:nth-child(7),
+th:nth-child(8) {
+    width: 180px;
+}
+
+// 增減百分比 
+th:nth-child(9),
+th:nth-child(10) {
+    width: 200px;
+}
+
+// 累計營收 
+th:nth-child(11),
+th:nth-child(12),
+th:nth-child(13) {
+    width: 250px;
+}
+
+// 備註
+th:nth-child(14) {
+    width: 300px;
+}
+
+td:nth-child(1),
+td:nth-child(2),
+td:nth-child(3),
+td:nth-child(4),
+td:nth-child(5) {
+    text-align: center;
+}
+
+td:nth-child(6),
+td:nth-child(7),
+td:nth-child(8),
+td:nth-child(9),
+td:nth-child(10),
+td:nth-child(11),
+td:nth-child(12),
+td:nth-child(13) {
+    text-align: right;
+}
+
+// 表格
+.monthly-revenue-table {
+    overflow-x: auto;
+    margin: 0 60px;
+}
+
+// 讀取
+.loading {
+    height: 50vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+// 標題
+.title {
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    font-family: cursive;
+    font-weight: bolder;
+}
+
+// 分頁
+.pagination {
+    margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// 查詢按鈕
+.search-button {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0 60px 10px 0;
+}
